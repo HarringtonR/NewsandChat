@@ -9,11 +9,13 @@ export default class NewsFeed extends Component {
         </div>
         <div className='newsArticles'>
           <ul>
-              {this.props.title.map(title =>
+              {this.props.title.map((title, i)=>
                   <li
                   className ='newsFeedTitles'
-                  key={title.id}>
-                    {title.title}
+                  key={i}
+                  >
+                    <h3 className ='articleTitles'>{title.title}</h3>
+                    <p className ='articleDescriptions' >{title.description} </p>
                     </li>
                   )}
           </ul>

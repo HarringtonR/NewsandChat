@@ -15,6 +15,7 @@ class App extends Component {
         messages: [],
         source: [],
         title: []
+        // description: []
       }
       this.sendMessage = this.sendMessage.bind(this)
     }
@@ -51,6 +52,7 @@ class App extends Component {
           this.setState(prevState => ({
             source:articles[0].source.id,
             title: articles
+            // description: articles
            }))
          })
         console.log(this.state.title)
@@ -73,7 +75,10 @@ class App extends Component {
         <Title />
            <div className ='container'>
               <div className ='news'>
-                <NewsFeed title = {this.state.title} />
+                <NewsFeed
+                title = {this.state.title}
+                // description = {this.state.description}
+                />
               </div>
               <div className ='main'>
                  <div className ='roomlist'>
