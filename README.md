@@ -2,8 +2,6 @@
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
-
 You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
 
 |  Day | Deliverable | Status
@@ -19,7 +17,10 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 ## Project Description
 
-News and Chat / NC will be a live stream of news and a live chat. On mobile they will run one on top of another. On a desktop they will be side by side.  Using the google News API for news and Chatkit's API to power the chatroom.
+News and Chat / NC will be a live stream of news and a live chat. On mobile they will run one on top of another. On a desktop they will be side by side.  The end goal be to link a story or news article to a specific chat in any way, be it by distance or a manual link. Using the google News API for news and Chatkit's API to power the chatroom.
+
+ -  [ChatKit Api] (https://pusher.com/chatkit)
+ - [Google News Api] (https://newsapi.org/s/google-news-api)
 
 ## Wireframes
 
@@ -40,11 +41,11 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 - Render data on page and design layout
 - Create login for chat
 - Scrolling chat and news feed
+- Link news story to chat room
 
 #### PostMVP 
 
 - Set news to stream
-- Correlate news story to chat room
 - Filter stories
 - Filter by distance
 - update news automatically
@@ -73,13 +74,13 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| App | H | 5hrs| N/A | N/A |
+| App/Logic | H | 7hrs| N/A | N/A |
 | Chat API | H | 5hrs| N/A | N/A |
 | News API | H | 5hrs| N/A | N/A |
 | MessageList| H | 2hrs| N/A | N/A |
 | News Feed| H | 2hrs| N/A | N/A |
 | Chat Form | H | 5hrs| N/A | N/A |
-| Total | H | 29hrs| N/A | N/A |
+| Total | H | 31hrs| N/A | N/A |
 
 ## Helper Functions
 Helper functions should be generic enought that they can be reused in other applications. Use this section to document all helper functions that fall into this category.
