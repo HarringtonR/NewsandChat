@@ -1,0 +1,128 @@
+*{
+  margin: 0 auto;
+    font-weight: 100;
+    font-family: helvetica;
+    max-width: 1200px;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.messageBox{
+  width: 80%;
+  text-align: left;
+  border: 1px solid;
+}
+.MessageList{
+  padding: 15px;
+  padding-bottom: 20px;
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+}
+
+
+.App{
+  font-weight: 100;
+}
+
+
+.sender{
+  opacity: .9;
+  padding: 15px;
+  font-size: 25px;
+}
+
+.message{
+  color: white;
+  font-size: 25px;
+  opacity: .9;
+}
+
+span{
+    background: #73e600;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.Title {
+    border: 1px solid;
+}
+
+
+.roomlist {
+ border: 1px solid;
+ width: 20%;
+}
+
+.main{
+  display: flex;
+  border: 1px solid;
+  margin: 0px;
+  padding: 0px;
+  width: 55%;
+}
+
+.roomtitle{
+  display: flex;
+  justify-content: center;
+   border: 1px solid;
+   padding: 10px;
+}
+
+.list{
+  display: flex;
+  justify-content: center;
+}
+
+.list li{
+  padding: 5px;
+}
+
+.SendMessageForm{
+   border: 1px solid;
+  text-align: center;
+  width: 400px;
+  padding: 15px;
+}
+.inputs {
+  display: flex;
+  justify-content: center;
+  height: 35px;
+  width: 390px;
+  padding: 10px;
+}
+
+.news{
+  border: 1px solid;
+  width: 45%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.container{
+  display: flex;
+  min-height: 800px;
+}
+
+.newstitle{
+  text-align: center;
+}
+
+.articleSource{
+
+}
+
+.articleTitle{
+  padding:10px;
+}
+
+.articleContent{
+  padding: 10px;
+}
+
