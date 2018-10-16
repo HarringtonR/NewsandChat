@@ -73,11 +73,7 @@ class App extends Component {
         <Title />
            <div className ='container'>
               <div className ='news'>
-               {this.state.title.map( title =>
-                  <div key={title.id}>
-                    {title.title}
-                  </div>
-                )}
+                <NewsFeed title = {this.state.title} />
               </div>
               <div className ='main'>
                  <div className ='roomlist'>
