@@ -8,7 +8,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |---|---| ---|
 |Day 1| Project Description | In Progress
 |Day 2| Wireframes / Priority Matrix / Functional Components | In Progress
-|Day 3| Core Application Structure (HTML, CSS, etc.) | Incomplete
+|Day 3| Core Application Structure, News and Chat) | Incomplete
 |Day 4| Pseudocode / actual code | Incomplete
 |Day 5| Initial Clickable Model  | Incomplete
 |Day 6| MVP | Incomplete
@@ -19,8 +19,8 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 News and Chat / NC will be a live stream of news and a live chat. On mobile they will run one on top of another. On a desktop they will be side by side.  The end goal be to link a story or news article to a specific chat in any way, be it by distance or a manual link. Using the google News API for news and Chatkit's API to power the chatroom.
 
- -  [ChatKit Api] (https://pusher.com/chatkit)
- - [Google News Api] (https://newsapi.org/s/google-news-api)
+ -  [ChatKit Api](https://pusher.com/chatkit)
+ - [Google News Api](https://newsapi.org/s/google-news-api)
 
 ## Wireframes
 
