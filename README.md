@@ -6,10 +6,10 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Day 1| Project Description | In Progress
-|Day 2| Wireframes / Priority Matrix / Functional Components | In Progress
-|Day 3| Core Application Structure, News and Chat) | Incomplete
-|Day 4| Pseudocode / actual code | Incomplete
+|Day 1| Project Description | Complete
+|Day 2| Wireframes / Priority Matrix / Functional Components | Complete
+|Day 3| Core Application Structure (HTML, CSS, etc.) | In progress
+|Day 4| Pseudocode / actual code | In progress
 |Day 5| Initial Clickable Model  | Incomplete
 |Day 6| MVP | Incomplete
 |Day 7| Present | Incomplete
@@ -19,8 +19,8 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 News and Chat / NC will be a live stream of news and a live chat. On mobile they will run one on top of another. On a desktop they will be side by side.  The end goal be to link a story or news article to a specific chat in any way, be it by distance or a manual link. Using the google News API for news and Chatkit's API to power the chatroom.
 
- -  [ChatKit Api](https://pusher.com/chatkit)
- - [Google News Api](https://newsapi.org/s/google-news-api)
+ -  [ChatKit Api] (https://pusher.com/chatkit)
+ - [Google News Api] (https://newsapi.org/s/google-news-api)
 
 ## Wireframes
 
@@ -74,11 +74,11 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| App/Logic | H | 7hrs| N/A | N/A |
-| Chat API | H | 5hrs| N/A | N/A |
-| News API | H | 5hrs| N/A | N/A |
+| App/Logic | H | 7hrs| 2 | N/A |
+| Chat API | H | 5hrs| 2 | N/A |
+| News API | H | 5hrs| 2 | N/A |
 | MessageList| H | 2hrs| N/A | N/A |
-| News Feed| H | 2hrs| N/A | N/A |
+| News Feed| H | 2hrs| 3 | N/A |
 | Chat Form | H | 5hrs| N/A | N/A |
 | Total | H | 31hrs| N/A | N/A |
 
@@ -92,7 +92,9 @@ Helper functions should be generic enought that they can be reused in other appl
 | onChange | For forms and filter forms | 
 
 ## Additional Libraries
-N/A
+
+- [Personal GitHub with testing repo for this project](https://github.com/HarringtonR/ChatKitBuild)
+- This is where I was making risky changes that could break stuff.
 
 ## Code Snippet
 

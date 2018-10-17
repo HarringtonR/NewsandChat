@@ -4,6 +4,9 @@
   "private": true,
   "dependencies": {
     "@pusher/chatkit": "^0.7.18",
+    "@pusher/chatkit-server": "^0.12.2",
+    "cors": "^2.8.4",
+    "pusher-chatkit-server": "^0.12.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-scripts": "2.0.4"

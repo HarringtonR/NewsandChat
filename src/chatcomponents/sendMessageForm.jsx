@@ -24,7 +24,7 @@ handleSubmit(e){
   })
 }
   render() {
-    console.log(this.state.message)
+    // console.log(this.state.message)
     return (
       <div className="MessageForm">
         <form

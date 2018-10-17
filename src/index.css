@@ -61,6 +61,7 @@ span{
 
 
 .roomlist {
+  text-align: center;
  border: 1px solid;
  width: 20%;
  height: 800px;
@@ -75,12 +76,6 @@ span{
   height: 800px;
 }
 
-.roomtitle{
-  display: flex;
-  justify-content: center;
-   border: 1px solid;
-   padding: 10px;
-}
 
 .list{
   display: flex;
@@ -126,8 +121,16 @@ span{
 .newsFeedTitles{
   padding: 10px;
 }
-
+.newsFeedTitles:hover {
+  background-color: #73e600;
+  transition: 1s;
+  opacity: .8;
+}
 .articleTitles{
   font-weight: 500;
   padding: 10px;
+}
+.articleDescriptions{
+  padding-left: 10px;
+  padding-right: 10px;
 }
