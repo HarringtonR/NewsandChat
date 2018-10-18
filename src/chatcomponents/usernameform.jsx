@@ -24,7 +24,7 @@ onSubmit(e){
     return (
       <div>
         <form onSubmit ={(e) => this.onSubmit(e)}>
-          <input type='text' placeholder='what is your username?' onChange={(e) => this.onChange(e)}/>
+          <input type='text' placeholder='What is your username?' onChange={(e) => this.onChange(e)}/>
           <input type='submit'/>
         </form>
       </div>

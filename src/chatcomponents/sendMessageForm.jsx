@@ -18,7 +18,7 @@ export default class SendMessageForm extends Component {
 
 handleSubmit(e){
   e.preventDefault()
-  this.props.sendMessage(this.state.message)
+  this.props.onSubmit(this.state.message)
   this.setState({
     message: ''
   })

@@ -1,0 +1,74 @@
+OLD CODE
+
+      this.sendMessage = this.sendMessage.bind(this)
+      this.subscribeToRoom = this.subscribeToRoom.bind(this)
+      this.getRooms = this.getRooms.bind(this)
+
+
+
+
+
+
+
+      //what is the deal with all the this user stuff?  Broadcasting messages
+
+
+
+
+             getRooms(){
+         this.currentUser.getJoinableRooms()
+            .then(joinableRooms => {
+              this.setState({
+                joinableRooms,
+                joinedRooms: this.currentUser.rooms
+              })
+            })
+      }
+
+
+
+
+           subscribeToRoom(roomId){
+      this.setState({
+        messages: []
+      })
+      this.currentUser.subscribeToRoom({
+              roomId:roomId,
+              hooks: {
+                onNewMessage: message => {
+                  this.setState({
+                    messages : [...this.state.messages, message]
+                  })
+                }
+              }
+            })
+      .then(room => {
+        this.setState({
+        roomId: room.id
+      })
+      this.getRooms()
+     })
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <SendMessageForm sendMessage = {(text) => this.sendMessage(text)}/>
+
+

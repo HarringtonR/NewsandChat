@@ -19,8 +19,8 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 News and Chat / NC will be a live stream of news and a live chat. On mobile they will run one on top of another. On a desktop they will be side by side.  The end goal be to link a story or news article to a specific chat in any way, be it by distance or a manual link. Using the google News API for news and Chatkit's API to power the chatroom.
 
- -  [ChatKit Api] (https://pusher.com/chatkit)
- - [Google News Api] (https://newsapi.org/s/google-news-api)
+ -  [ChatKit Api](https://pusher.com/chatkit)
+ - [Google News Api](https://newsapi.org/s/google-news-api)
 
 ## Wireframes
 
@@ -74,13 +74,16 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| App/Logic | H | 7hrs| 2 | N/A |
-| Chat API | H | 5hrs| 2 | N/A |
-| News API | H | 5hrs| 2 | N/A |
-| MessageList| H | 2hrs| N/A | N/A |
+| App/Logic | H | 7hrs| 3 | N/A |
+| Chat API | H | 5hrs| 2 | 2 |
+| Chat Build | H | 8hrs | 8 | 8|
+| News API | H | 5hrs| 2 | 2 |
+| MessageList| H | 2hrs| 2 | 2 |
+| Room List | H | 2hrs | .5 | N/A|
 | News Feed| H | 2hrs| 3 | N/A |
-| Chat Form | H | 5hrs| N/A | N/A |
-| Total | H | 31hrs| N/A | N/A |
+| Chat Form | H | 5hrs| 2 | N/A |
+| Server  | H | 5 | 6| 5|
+| Total | H | 44hrs| 28 | N/A |
 
 ## Helper Functions
 Helper functions should be generic enought that they can be reused in other applications. Use this section to document all helper functions that fall into this category.
@@ -111,10 +114,12 @@ Use this section to include a brief code snippet of functionality that you are p
 
 
 ## Change Log
-N/A
+- Didn't realize i needed a server which added 5 hours to the build
 
 ## Issues and Resolutions
- N/A
+ -Token issues and user login issues
+ -HUGH issue not using a loging first.  Was mounting with no user name and throwing errors.
+ - Making users unique cost me all of wednesday but have a functioning chatroom now
 
 <!--#### SAMPLE.....
 **ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
