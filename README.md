@@ -19,8 +19,9 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 News and Chat / NC will be a live stream of news and a live chat. On mobile they will run one on top of another. On a desktop they will be side by side.  The end goal be to link a story or news article to a specific chat in any way, be it by distance or a manual link. Using the google News API for news and Chatkit's API to power the chatroom.
 
- -  [ChatKit Api](https://pusher.com/chatkit)
+ - [ChatKit Api](https://pusher.com/chatkit)
  - [Google News Api](https://newsapi.org/s/google-news-api)
+ - [Youtube tutorial used for logins and user online list](https://www.youtube.com/watch?v=6vcIW0CO07k&t=1024s)
 
 ## Wireframes
 
@@ -118,8 +119,14 @@ Use this section to include a brief code snippet of functionality that you are p
 
 ## Issues and Resolutions
  -Token issues and user login issues
+ -Not knowing I needed a server was a large delay. Server only required to handle additional users. Otherwise the rest can run on the chatkit api.
  -HUGH issue not using a loging first.  Was mounting with no user name and throwing errors.
- - Making users unique cost me all of wednesday but have a functioning chatroom now
+ - Making users unique cost me all of wednesday but have a functioning chatroom now.  The issue was before I had both news and chat in my app componentDid mount.  
+ - This caused an issue when i wanted to create new users.  I couldn't have a blank user when mounting and the chatroom would error out.  So i had to rebuild it with a form first. So when you entered your name. the chatroom would have a user asssigned instead of a blank name on mounting.
+ - Massive issues trying to setup multiple chatrooms. I hit my cutoff time of thursday night not being able to make multiple chat rooms and a FULLY functional chat.  Chat still works but can't progress to linking them at this time.
+
+
+
 
 <!--#### SAMPLE.....
 **ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                

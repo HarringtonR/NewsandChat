@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 
 export default class NewsFeed extends Component {
+
+
   render() {
     return (
       <div className="NewsFeed">
@@ -11,6 +13,7 @@ export default class NewsFeed extends Component {
           <ul>
               {this.props.title.map((title, i)=>
                   <li
+                  onClick ={() => alert(title.title)}
                   className ='newsFeedTitles'
                   key={i}
                   >

@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Chatkit from '@pusher/chatkit'
 import MessageList from './messagesList.jsx'
 import SendMessageForm from './sendMessageForm.jsx'
+import WhosOnline from './whosonline.jsx'
+import RoomList from './roomlist.jsx'
 
 export default class Chatroom extends Component {
   constructor(props){
@@ -9,7 +11,9 @@ export default class Chatroom extends Component {
     this.state ={
       messages: [],
       currentRoom: {},
-      currentUser: {}
+      currentUser: {},
+      joinableRooms: [],
+      joinedRooms: []
     }
   }
 
@@ -25,10 +29,19 @@ export default class Chatroom extends Component {
       chatManager
       .connect()
       .then(currentUser => {
-        this.setState({ currentUser })
-        console.log(currentUser)
+        this.setState({
+          currentUser: currentUser
+           })
+
+        this.state.currentUser.getJoinableRooms()
+            .then(joinableRooms => {
+                this.setState({
+                    joinableRooms,
+                    joinedRooms: this.state.currentUser.rooms
+                })
+            })
           return currentUser.subscribeToRoom({
-            roomId: 18843156,
+            roomId: 18930144,
             messageLimit: 50,
             hooks: {
               onNewMessage: message => {
@@ -36,12 +49,17 @@ export default class Chatroom extends Component {
                 messages: [...this.state.messages, message],
               })
             },
+            //these are chatkit functions that are pre
+            onUserCameOnline:() => this.forceUpdate(),
+            onUserWentOffline:() => this.forceUpdate(),
+            onUserJoined:() => this.forceUpdate()
            },
           })
         })
         .then(currentRoom => {
           this.setState({currentRoom})
         })
+        //dont understand these catch errors
         .catch(error => console.log(error))
   }
 
@@ -57,6 +75,8 @@ export default class Chatroom extends Component {
     return (
       <div className='main'>
          <div className ='roomlist'>
+           <WhosOnline users ={this.state.currentRoom.users} />
+           <RoomList rooms={[...this.state.joinableRooms, ...this.state.joinedRooms]}/>
          </div>
          <div className = 'messageBox'>
            <MessageList

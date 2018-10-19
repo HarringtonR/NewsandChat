@@ -4,7 +4,6 @@ import Title from './appcomponents/title.jsx'
 import NewsFeed from './newscomponents/newsfeed.jsx'
 import UsernameForm from './chatcomponents/usernameform.jsx'
 import Chatroom from './chatcomponents/chatroom.jsx'
-// import NewRoomForm from './components/NewRoomForm'
 
 class App extends Component {
   constructor(){
@@ -32,10 +31,10 @@ class App extends Component {
         console.log('success')
       })
       .catch(error => {
-        console.error(error)
+        console.error('error', error)
       })
     }
-
+//whats console.error(error)
     componentDidMount(){
       fetch('https://newsapi.org/v2/top-headlines?country=us&apiKey=27d48c41e26a4f7ba585bd78401b7181')
         .then( res => res.json())
@@ -57,8 +56,8 @@ class App extends Component {
               <div className ='news'>
                 <NewsFeed title = {this.state.title}/>
               </div>
-              <div>
-               <UsernameForm onSubmit ={(username) => this.onUsernameSubmitted(username)}/>
+              <div className ='formAlign'>
+                <UsernameForm onSubmit ={(username) => this.onUsernameSubmitted(username)}/>
               </div>
           </div>
       </div>

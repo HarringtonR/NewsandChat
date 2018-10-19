@@ -16,7 +16,6 @@ ul{
   flex-direction: column;
   width: 80%;
   text-align: left;
-  border: 1px solid;
   height: 800px;
   overflow: scroll;
 
@@ -52,23 +51,24 @@ h1{
 }
 
 span{
-    background: #73e600;
+    background: #2C303A;
     border-radius: 20px;
     padding: 10px;
 }
 
 .Title {
-    border: 1px solid;
+  border-bottom: 1px solid #2C303A;
 }
 
 
 .roomlist {
   text-align: center;
- border: 1px solid;
  width: 20%;
  height: 800px;
  background: #2C303A;
  color: white;
+ height: 700px;
+ margin-top: 20px;
 }
 .roomlist a{
   color: white;
@@ -76,7 +76,6 @@ span{
 
 .main{
   display: flex;
-  border: 1px solid;
   margin: 0px;
   padding: 0px;
   width: 55%;
@@ -94,21 +93,21 @@ span{
 }
 
 .SendMessageForm{
-   border: 1px solid;
+  border-top: 1px solid #2C303A;
   text-align: center;
-  width: 400px;
+  width: 450px;
   padding: 15px;
 }
 .inputs {
   display: flex;
   justify-content: center;
   height: 35px;
-  width: 390px;
+  width: 440px;
   padding: 10px;
+  border: none;
 }
 
 .news{
-  border: 1px solid;
   height: 800px;
   width: 45%;
   margin: 0px;
@@ -119,19 +118,25 @@ span{
 .container{
   display: flex;
   min-height: 800px;
+  padding-top: 10px;
 }
 
 .newstitle{
   text-align: center;
+  background-color: white;
+}
+.newsArticles{
+  background-color: white;
 }
 
 .newsFeedTitles{
   padding: 10px;
 }
 .newsFeedTitles:hover {
-  background-color: #73e600;
+  background-color: #2C303A;
+  color: white;
   transition: 1s;
-  opacity: .8;
+  opacity: .7;
 }
 .articleTitles{
   font-weight: 500;
@@ -141,3 +146,27 @@ span{
   padding-left: 10px;
   padding-right: 10px;
 }
+
+.formAlign{
+  display: flex;
+  align-items: center;
+}
+
+.inputNameForm{
+  padding: 10px;
+  width: 300px;
+}
+.inputNameSubmit{
+  padding: 10px;
+}
+
+.room{
+  color: white;
+}
+h4{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 800;
+  color: white;
+}
+

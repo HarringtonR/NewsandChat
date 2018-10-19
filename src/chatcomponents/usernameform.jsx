@@ -22,10 +22,17 @@ onSubmit(e){
 
   render() {
     return (
-      <div>
+      <div  className ='usernameForm'>
         <form onSubmit ={(e) => this.onSubmit(e)}>
-          <input type='text' placeholder='What is your username?' onChange={(e) => this.onChange(e)}/>
-          <input type='submit'/>
+          <input
+          className = 'inputNameForm'
+          type='text'
+          placeholder='What is your username?'
+          onChange={(e) => this.onChange(e)}
+          />
+          <input
+          className = 'inputNameSubmit'
+          type='submit'/>
         </form>
       </div>
     );

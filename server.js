@@ -27,8 +27,8 @@ app.post('/users', (req, res) => {
     if(error.error_type === 'services/chatkit/user_already_exists') {
       res.sendStatus(200)
     } else {
-      res.status(error.statusCode).json(error)
-      //don't totally understand the errors
+      res.status(error.status).json(error)
+      //don't understand the errors but i had a typo after status that was stopping me from loggin in as the same user
     }
   })
 })
