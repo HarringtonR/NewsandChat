@@ -19,8 +19,9 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 News and Chat / NC will be a live stream of news and a live chat. On mobile they will run one on top of another. On a desktop they will be side by side.  The end goal be to link a story or news article to a specific chat in any way, be it by distance or a manual link. Using the google News API for news and Chatkit's API to power the chatroom.
 
- -  [ChatKit Api] (https://pusher.com/chatkit)
- - [Google News Api] (https://newsapi.org/s/google-news-api)
+- [ChatKit Api](https://pusher.com/chatkit)
+- [Google News Api](https://newsapi.org/s/google-news-api)
+- [Youtube tutorial used for logins and user online list](https://www.youtube.com/watch?v=6vcIW0CO07k&t=1024s)
 
 ## Wireframes
 
@@ -31,7 +32,7 @@ News and Chat / NC will be a live stream of news and a live chat. On mobile they
 Include a full list of features that have been prioritized based on the `Time and Importance` Matix.  
 ![alt text](https://imgur.com/TfD93YA.jpg)
 
-### MVP/PostMVP - 5min
+### MVP/PostMVP
 
 The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
@@ -41,10 +42,11 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 - Render data on page and design layout
 - Create login for chat
 - Scrolling chat and news feed
-- Link news story to chat room
+
 
 #### PostMVP 
 
+- Link news story to chat room
 - Set news to stream
 - Filter stories
 - Filter by distance
@@ -74,29 +76,34 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| App/Logic | H | 7hrs| 2 | N/A |
-| Chat API | H | 5hrs| 2 | N/A |
-| News API | H | 5hrs| 2 | N/A |
-| MessageList| H | 2hrs| N/A | N/A |
-| News Feed| H | 2hrs| 3 | N/A |
-| Chat Form | H | 5hrs| N/A | N/A |
-| Total | H | 31hrs| N/A | N/A |
+| App/Logic | H | 7hrs| 10 | 15 |
+| Chat API | H | 5hrs| 2 | 6 |
+| Chat Build | H | 5hrs| 10 | 10|
+| News API | H | 5hrs| 2 | 2 |
+| MessageList| H | 2hrs| 5 |5 |
+| News Feed| H | 2hrs| 3 | 3 |
+| Chat Form | H | 5hrs| 3 | 5 |
+| Server Build | H | 5hrs | 6 | 6|
+| Total | H | 41hrs| N/A | 48 |
 
 ## Helper Functions
 Helper functions should be generic enought that they can be reused in other applications. Use this section to document all helper functions that fall into this category.
 
 | Function | Description | 
 | --- | :---: |  
-| onSubmit | Adding Chat to the screen and filter news | 
-| onHover | Enlarge the portion of the screen your on | 
-| onChange | For forms and filter forms | 
+| onSubmit | Adding Chat to the screen and user name input | 
+| onHover | Add borders to news stories | 
+| onChange | For forms and messages | 
+| componentDidMount | Used for both chat and news |
+
 
 ## Additional Libraries
-N/A
+- Chatkit
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description  
+Use this section to include a brief code snippet of functionality that you are proud of an a brief description.  
+-Getting both components to pull data/ mount when I wanted was tricky.  I had to grab data for the news first and then after the form for your name was filled out. Grab the chatkit api.
 
  componentDidMount(){
       const chatManager = new Chatkit.ChatManager({
@@ -109,10 +116,14 @@ Use this section to include a brief code snippet of functionality that you are p
 
 
 ## Change Log
-N/A
+- Unable to link chats and had to change linking to a post MVP.
 
 ## Issues and Resolutions
- N/A
+- Token issues and user login issues -Not knowing I needed a server was a large delay. Server only required to handle additional users. Otherwise the rest can run on the chatkit api. -HUGH issue not using a log-in first. I was trying to mount a component with no user name and therefore chatkit would error out. I had to wait until a username was entered to start the chatkit.
+- Making users unique cost me all of wednesday but have a functioning chatroom now. The issue was before I had both news and chat in my app componentDid mount.
+This caused an issue when i wanted to create new users. I couldn't have a blank user when mounting and had to rebuild it with a form first. So when you entered your name. the chatroom would have a user asssigned instead of a blank name on mounting.
+- Massive issues trying to setup multiple chatrooms. I hit my cutoff time of thursday night not being able to make multiple chat rooms and a FULLY functional chat. Chat still works but can't progress to linking them at this time.
+- Focused on making it mobile at the end.
 
 <!--#### SAMPLE.....
 **ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
