@@ -27,7 +27,7 @@ onSubmit(e){
           <input
           className = 'inputNameForm'
           type='text'
-          placeholder='What is your username?'
+          placeholder='Enter name to join chat....'
           onChange={(e) => this.onChange(e)}
           />
           <input
