@@ -18,7 +18,7 @@ ul {
   height: 700px;
   overflow: scroll;
   width: 330px;
-  border-left: 1px solid   #e6e6e6;
+  border-left: 1px solid #e6e6e6;
 
 }
 
@@ -27,7 +27,7 @@ ul {
   padding-bottom: 20px;
   height: 700px;
   width: 100%;
-   overflow: scroll;
+  overflow-y: auto;
 }
 
 h1 {
@@ -57,20 +57,17 @@ span {
   background: #2C303A;
   border-radius: 20px;
   padding: 10px;
+  color: white;
 }
 
 .Title {
   border-bottom: 1px solid #2C303A;
-  padding-top: 20px;
 }
 
 
 .roomlist {
   text-align: center;
-  height: 700px;
   height: 550px;
-  margin-top: 20px;
-  margin-left: 20px;
   font-size: 10px;
   padding: 5px;
 }
@@ -119,10 +116,12 @@ span {
   min-height: 800px;
   padding-top: 20px;
 }
+
 .newstitle {
   text-align: center;
   background-color: white;
   text-align: center;
+  padding: 10px;
 }
 
 .newsArticles {
@@ -134,8 +133,8 @@ span {
 }
 
 .newsFeedTitles:hover {
-  border-top:1px solid #e6e6e6;
-  border-bottom:1px solid #e6e6e6;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .articleTitles {
@@ -171,7 +170,8 @@ span {
 .room {
   color: white;
 }
-.NewsFeed{
+
+.NewsFeed {
   overflow: scroll;
   height: 680px;
 }
@@ -188,33 +188,111 @@ button {
   justify-content: center;
   text-align: center;
   margin-top: 15px;
-  padding:15px;
+  padding: 15px;
   font-weight: 700;
   color: white;
   background-color: #2C303A;
   border: none;
   border-radius: 10px;
 }
-iframe{
+
+iframe {
   width: 100%;
   height: 800px;
   border: none;
 }
-.chatTitle{
+
+.chatTitle {
   text-align: center;
+  padding: 10px;
 }
-.chatbox{
+
+.chatbox {
   width: 40%;
 }
 
-
-button{
+button {
   margin-bottom: 15px;
 }
+
 @media only screen and (max-width: 600px) {
-    * {
-        background-color: lightblue;
-    }
+  .container {
+    flex-direction: column;
+  }
+
+  .news {
+    width: 100%;
+  }
+
+  .chatbox {
+    width: 100%;
+  }
+
+  .chatTitle {
+    margin-top: 40px;
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
+  h3 {
+    font-size: 12px;
+  }
+
+  .sender {
+    font-size: 12px;
+  }
+
+  span {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .SendMessageForm {
+    border-top: 1px solid #e6e6e6;
+  }
+
+  .roomlist {
+    height: 400px;
+  }
+
+  input {
+    margin: 0;
+  }
+
+  .inputs {
+    height: 20px;
+    padding: 0px;
+  }
+
+  .formAlign {
+    display: flex;
+    margin-top: 170px;
+  }
+  .messageBox{
+    border: none;
+  }
+
 }
 
+@media only screen and (max-width: 760px) {
+  p {
+    font-size: 12px;
+  }
 
+  h3 {
+    font-size: 14px;
+  }
+
+  .sender {
+    font-size: 12px;
+  }
+
+  span {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  }

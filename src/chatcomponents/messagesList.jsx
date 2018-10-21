@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
-
+import ReactDOM from 'react-dom'
 export default class MessageList extends Component {
+
+   componentDidUpdate() {
+        const scroll = ReactDOM.findDOMNode(this)
+        scroll.scrollTop = scroll.scrollHeight
+    }
+
   render() {
     return (
       <ul className="MessageList">

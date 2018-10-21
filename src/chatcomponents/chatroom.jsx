@@ -59,11 +59,14 @@ export default class Chatroom extends Component {
    })
   }
 
+
   render() {
+    const  location = window.location
     return (
       <div className = 'chatbox'>
         <div className ='chatTitle'>
            <h3 className=''>Chatroom</h3>
+           <button onClick ={() => location.reload()}> Return to Login </button>
         </div>
         <div className='main'>
           <div className = 'messageBox'>

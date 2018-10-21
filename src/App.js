@@ -72,6 +72,7 @@ class App extends Component {
                  </div>
                   <Chatroom
                   currentUsername= {this.state.currentUsername}
+                  returnLogin = {(e) => this.returnLogin(e)}
                   />
               </div>
             </div>
