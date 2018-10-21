@@ -32,7 +32,7 @@ News and Chat / NC will be a live stream of news and a live chat. On mobile they
 ## Priority Matrix
 
 Include a full list of features that have been prioritized based on the `Time and Importance` Matix.  
-![alt text](https://imgur.com/TfD93YA.jpg)
+![alt text](https://imgur.com/QYbPXSA.jpg)
 
 ### MVP/PostMVP
 
