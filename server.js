@@ -28,7 +28,7 @@ app.post('/users', (req, res) => {
       res.sendStatus(200)
     } else {
       res.status(error.status).json(error)
-      //don't understand the errors but i had a typo after status that was stopping me from loggin in as the same user
+      //don't understand the errors but i had a typo after status that was stopping me from logging in as the same user
     }
   })
 })

@@ -211,6 +211,10 @@ iframe {
   width: 40%;
 }
 
+.chatroom {
+  padding-bottom: 10px;
+}
+
 button {
   margin-bottom: 15px;
 }
@@ -229,8 +233,11 @@ button {
   }
 
   .chatTitle {
-    margin-top: 40px;
-    font-size: 16px;
+    margin-top: 50px;
+  }
+
+  .chatroom {
+    padding-bottom: 10px;
   }
 
   p {
@@ -271,7 +278,8 @@ button {
     display: flex;
     margin-top: 170px;
   }
-  .messageBox{
+
+  .messageBox {
     border: none;
   }
 
@@ -295,4 +303,4 @@ button {
     padding: 8px;
   }
 
-  }
+}
