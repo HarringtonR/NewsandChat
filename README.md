@@ -105,8 +105,6 @@ Helper functions should be generic enought that they can be reused in other appl
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description.  
-
 -Getting both components to pull data/ mount when I wanted was tricky.  I had to grab data for the news first and then after the form for your name was filled out. Grab the chatkit api. Really didn't understand that I could use more than one componentDidMount.
 
  componentDidMount(){
@@ -123,12 +121,12 @@ Use this section to include a brief code snippet of functionality that you are p
 - Unable to link chats and had to change linking to a post MVP.
 
 ## Issues and Resolutions
-- Token issues and user login issues -Not knowing I needed a server was a large delay. Server only required to handle additional users. Otherwise the rest can run on the chatkit api. -HUGH issue not using a log-in first. I was trying to mount a component with no user name and therefore chatkit would error out. I had to wait until a username was entered to start the chatkit.
-- Making users unique cost me all of wednesday but have a functioning chatroom now. The issue was before I had both news and chat in my app componentDid mount.
-This caused an issue when i wanted to create new users. I couldn't have a blank user when mounting and had to rebuild it with a form first. So when you entered your name. the chatroom would have a user asssigned instead of a blank name on mounting.
+- Token issues and user login issues .Not knowing I needed a server was a large delay. Server only required to handle additional users. Otherwise the rest can run on the chatkit api. 
+- Biggest issue was not building the chatroom with a log-in first. I had both news and chat in my app componentDid mount along with an error in my server file. 
+- I couldn't have a blank user when mounting and had to rebuild it with a form first. So when you entered your name. the chatroom would have a user asssigned instead of a blank name on mounting. Having a user first was necessary for Chatkit.
 - More issues trying to setup multiple chatrooms. I hit my cutoff time of thursday night not being able to make multiple chat rooms and a FULLY functional chat. Chat still works but can't progress to linking them at this time.
 - Focused on making it mobile at the end.
-- Accidentally saved over my readme once from another file and had to re-write all of it.
+
 
 <!--#### SAMPLE.....
 **ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                

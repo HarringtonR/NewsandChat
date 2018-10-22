@@ -30,7 +30,7 @@ export default class Chatroom extends Component {
         currentUser: currentUser
          })
         return currentUser.subscribeToRoom({
-          roomId: 19175012,
+          roomId: 19225978,
           messageLimit: 50,
           hooks: {
             onNewMessage: message => {
