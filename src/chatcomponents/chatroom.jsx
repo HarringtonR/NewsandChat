@@ -19,7 +19,7 @@ export default class Chatroom extends Component {
       instanceLocator: 'v1:us1:74fe2f44-4b4c-4051-b60c-cdc56480a7cc',
       userId: this.props.currentUsername,
       tokenProvider: new Chatkit.TokenProvider({
-        url: `http://localhost:3001/authenticate`
+        url: `/authenticate`
       }),
     })
 
