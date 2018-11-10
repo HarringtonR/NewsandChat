@@ -39,7 +39,7 @@ app.post('/authenticate', (req, res) => {
  res.status(authData.status).send(authData.body)
 })
 //port that server is running on
-const PORT =3001
+const PORT = process.env.PORT || 3001;
 app.listen(PORT, err => {
   if(err) {
     console.error(err)
