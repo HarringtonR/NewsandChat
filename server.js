@@ -2,7 +2,6 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const cors = require('cors')
 const Chatkit = require('pusher-chatkit-server')
-//cors is cross origin resource sharing
 const app =express()
 
 const chatkit = new Chatkit.default({
@@ -40,7 +39,7 @@ app.post('/authenticate', (req, res) => {
  res.status(authData.status).send(authData.body)
 })
 //port that server is running on
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, err => {
   if(err) {
     console.error(err)
