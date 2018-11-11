@@ -13,7 +13,7 @@ const chatkit = new Chatkit.default({
 app.use(bodyParser.urlencoded({ extended: false}))
 app.use(bodyParser.json())
 app.use(cors())
-app.use(express.static('client/build'));
+app.use(express.static('build'));
 
 app.post('/users', (req, res) => {
   const { username } = req.body
